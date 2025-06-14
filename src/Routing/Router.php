@@ -17,6 +17,7 @@ class Router
     {
         try {
             $path = $this->normalizePath($uri);
+
             if(!isset($this->routes[$path])) {
                 throw new Exception("La route n'existe pas");
             }
@@ -29,10 +30,12 @@ class Router
                 throw new Exception("La classe n'existe pas");
             }
             $controller = new $controllerPath();
+
             if(!method_exists($controller, $action)) {
                 throw new Exception("L'action n'existe pas");
             }
             $controller->$action();
+
         } catch(Exception $e) {
             $errorController = new ErrorController();
             $errorController->show($e->getMessage());
@@ -42,7 +45,9 @@ class Router
     public static function normalizePath(string $uri): string
     {
         $path = parse_url($uri, PHP_URL_PATH);
-        $path = rtrim($path, "/") . "/";
+        if($path !== '/'){
+            $path = rtrim($path, "/") . "/";
+        }
         return $path;
     }
 }
