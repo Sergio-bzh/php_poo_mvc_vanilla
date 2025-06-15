@@ -30,14 +30,14 @@ _J'ai implémenté et testé cette stack le dimanche 15 juin après avoir regard
     - ```git clone https://github.com/Sergio-bzh/php_poo_mvc_vanilla.git```
 - Positionnez vous dans le dossier du projet :
     - ```cd php_poo_mvc_vanilla```
-- Mette à jour le système d'auto-load :
+- Mettez à jour le système d'auto-load :
     - ```composer dump-autoload```
 - Lancez ou assurez vous que Docker (_Desktop ou daemon_) est en cours d'exécution.
 - Instanciez votre pile de développement :
     - ```docker compose up --build```
 - Vérifiez votre stack :
     - ```docker ps```
-- Testé vos services :
+- Testez vos services :
     - Service web avec un navigateur internet sur ```localhost:8000```
     - Service de bases de données relationnelles via PHP MyAdmin ```localhost:8888``` credentials ```helloworld```
     - Service de bases de données orientée document (_MongoDB_) via MongoExpress ```localhost:8181``` credentials ```mexpress```
