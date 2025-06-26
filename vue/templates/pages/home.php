@@ -4,7 +4,7 @@
         <div class="container px-5 py-24 mx-auto">
             <div class="flex flex-col text-center w-full mb-20">
             <h2 class="text-xs text-indigo-400 tracking-widest font-medium title-font mb-1">ROOF PARTY POLAROID</h2>
-            <h1 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-white">Accueil <?=$name ?> </h1>
+            <h1 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-white">Page d'Accueil : <?=$greetings,' ', $name ?> </h1>
             <p class="lg:w-2/3 mx-auto leading-relaxed text-base">Whatever cardigan tote bag tumblr hexagon brooklyn asymmetrical gentrify, subway tile poke farm-to-table. Franzen you probably haven't heard of them man bun deep jianbing selfies heirloom prism food truck ugh squid celiac humblebrag.</p>
             </div>
             <div class="flex flex-wrap">

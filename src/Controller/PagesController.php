@@ -2,10 +2,19 @@
 
 namespace App\Controller;
 
+use App\model\Repository\CategoryRepository;
+
 class PagesController extends BaseController
 {
     public function home(): void
     {
+        $repo = new CategoryRepository();
+        $categories = $repo->findAll();
+
+        // echo('<pre>');
+        //     var_dump($categories);
+        // echo('</pre>');
+
         $greetings = 'Hello';
         $name = 'John';
 

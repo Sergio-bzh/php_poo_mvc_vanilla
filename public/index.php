@@ -10,7 +10,7 @@ use App\Routing\Router;
 $router = new Router();
 $router->handleRequest($_SERVER["REQUEST_URI"]);
 
-use App\Db\Mysql;
+// use App\Db\Mysql;
 
 // $mysql = Mysql::getInstance();
 // // // echo('<pre>');
