@@ -2,3 +2,4 @@
 /vendor/
 /logs/
 /database/
+.env.local
