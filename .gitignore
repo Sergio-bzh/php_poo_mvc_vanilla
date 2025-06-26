@@ -2,4 +2,5 @@
 /vendor/
 /logs/
 /database/
+/config/.env.local
 .env.local

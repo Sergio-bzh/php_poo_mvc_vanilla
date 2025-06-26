@@ -42,4 +42,8 @@ _J'ai implémenté et testé cette stack le dimanche 15 juin après avoir regard
     - Service de bases de données relationnelles via PHP MyAdmin ```localhost:8888``` credentials ```helloworld```
     - Service de bases de données orientée document (_MongoDB_) via MongoExpress ```localhost:8181``` credentials ```mexpress```
 
+## ATTENTION !
+_Pensez à adapter le fichier .env.local à votre configuration en tenant compte de vos modifications et du fichier compose.yml_<br>
+_Le fichier **.env.local** peut être mis à la racine du projet ou dans le sous dossier **config** (c'est mon cas)_
+
 J'espère que ce petit projet vous sera utile pour suivre cette série lives (_ou replays_) d'Anthony LAPLANE
